@@ -1,0 +1,11 @@
+RewriteEngine On
+# comment
+# RewriteRule perdu.html$ trouve.html [L]
+# RewriteRule promo$ produits/food/biscuits.html [L]
+RewriteRule posts/([0-9]+)$ index.php?id_posts=$1 [L]
+RewriteRule posts$ index.php [L]
+RewriteRule deconnect$ auth_api.php?delog [L]
+RewriteRule auth$ auth_api.php [L]
+
+RewriteRule users/([0-9]+)$ users.php?id_users=$1 [L]
+
